@@ -1,0 +1,176 @@
+@font-face {
+  font-family: HankenGrotesk;
+  src: url("./assets/fonts/HankenGrotesk-VariableFont_wght.ttf");
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #fff;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  font-family: HankenGrotesk;
+  font-size: 18px;
+}
+
+.card-wrapper {
+  width: 700px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: 10px 10px 40px #e6e5f7;
+}
+
+/* .card-child {
+  display: flex;
+} */
+
+.card-child:nth-child(1) {
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  border-radius: 30px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
+
+.card-child:nth-child(1) h1 {
+  color: #b3adf5;
+}
+
+.circle {
+  background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+
+.circle h2 {
+  font-size: 70px;
+  font-weight: 800;
+  color: #fff;
+  text-align: center;
+}
+
+.circle p {
+  color: #8779ff;
+  font-weight: 500;
+  text-align: center;
+}
+
+.card-child:nth-child(1) h3 {
+  font-size: 30px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.card-child:nth-child(1) > p {
+  color: #bbb8ff;
+  text-align: center;
+  width: 240px;
+}
+
+.card-child:nth-child(2) {
+  padding: 30px;
+}
+
+.card-child:nth-child(2) h2 {
+  color: #52586b;
+}
+
+.second-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.stats {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.stats > div {
+  border-radius: 13px;
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+.stats > div > div {
+  display: flex;
+  gap: 10px;
+}
+
+.stats > div > div span {
+  font-weight: 800;
+  color: #5e6270;
+}
+
+.stats > div:first-child {
+  background-color: #fff5f6;
+}
+
+.stats > div:nth-child(2) {
+  background-color: #fefbf2;
+}
+
+.stats > div:nth-child(3) {
+  background-color: #f2fafa;
+}
+
+.stats > div:nth-child(4) {
+  background-color: #fefbf2;
+}
+
+div:nth-child(2) > div > div:nth-child(1) > div:nth-child(1) > p {
+  color: hsl(0, 100%, 67%);
+  font-weight: 500;
+}
+
+div:nth-child(2) > div > div:nth-child(2) > div:nth-child(1) > p {
+  color: hsl(39, 100%, 56%);
+  font-weight: 500;
+}
+
+div:nth-child(2) > div > div:nth-child(3) > div:nth-child(1) > p {
+  color: hsl(166, 100%, 37%);
+  font-weight: 500;
+}
+
+div:nth-child(2) > div > div:nth-child(4) > div:nth-child(1) > p {
+  color: hsl(234, 85%, 45%);
+  font-weight: 500;
+}
+
+button {
+  background-color: hsl(224, 30%, 27%);
+  color: #fff;
+  border: none;
+  width: 100%;
+  padding: 18px 32px;
+  border-radius: 30px;
+  font-weight: 500;
+  font-size: 17px;
+}
+
+@media screen and (max-width: 700px) {
+  .card-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 100%;
+    height: 144dvh;
+    /* height: 100dvh; */
+  }
+}
